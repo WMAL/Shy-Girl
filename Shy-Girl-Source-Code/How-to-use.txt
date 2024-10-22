@@ -1,0 +1,22 @@
+=========================================================================
+
+Usage:)-
+********
+
+
+usage: $. runme.sh [-s][-b][-p seconds] [-d domain name]
+        
+Example(1) get info for the domain myexample.com but do not pause or stop between tasks and redirect all outputs to a file called results.txt
+$. runme.sh -d myexample.com >> results.txt
+		
+Example(2) get info for the domain myexample.com and stop between tasks 
+$. runme.sh -s -d myexample.com 
+		
+Example(3) get info for the domain myexample.com and pause for 10 seconds between tasks 
+$. runme.sh -p 10 -d myexample.com
+		
+Example(4) get info for the domain myexample.com and pause for 15 seconds and stop between tasks 
+$. runme.sh -s -p 15 -d myexample.com
+
+Example(5) get info for the domain myexample.com and pause for 4 seconds and stop between tasks + beep sound when a task is completed
+$. runme.sh -s -b -p 4 -d myexample.com
